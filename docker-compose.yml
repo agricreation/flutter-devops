@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  flutter:
+    build: "./flutter"
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - flutter:/root
+
+volumes:
+  flutter:
